@@ -1,0 +1,38 @@
+{
+  "info": {
+    "_postman_id": "e2be1591-9c19-4c78-a4fa-00a2347d5ae7",
+    "name": "serverless-private-apis",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https:/{{url}}.execute-api.eu-west-1.amazonaws.com/orders",
+          "host": ["https"],
+          "port": "",
+          "path": ["{{url}}.execute-api.eu-west-1.amazonaws.com", "orders"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "/something"
+    }
+  ]
+}
